@@ -13,12 +13,11 @@ stdin.addListener("data", function(d) {
     var base = (dato);
     if(base.toString().trim() != "NaN"){
         console.log("Procederé generar los saludos");
-        var tres ="hi";
         var dos ="halo";
         var uno = "Hola";
         var lenguaje = "";
         for (let index = 0; index <= 0; index++) {
-            lenguaje += `${tres} ${dos}${uno} ${ base}   ` + "\n";
+            lenguaje += ` ${dos}${uno} ${ base}   ` + "\n";
         }
 
         fs.writeFile(
@@ -27,7 +26,7 @@ stdin.addListener("data", function(d) {
             (err) => {
                 if (err) 
                     throw err;
-                console.log(`${tres} ${dos}  ${uno}  ${ base }`);
+                console.log(` ${dos}  ${uno}  ${ base }`);
             }
         );
     }else{
